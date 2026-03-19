@@ -1,6 +1,7 @@
 * WIP
 * Address Quick Check
-# SOLANA
+
+* SOLANA
 GET https://authapi0.nominis.io:8443/v2/address/quick_check?address=2x6cYrR3Dxo1znJMVsew8kHEWuyHsGKHPiaNJZ3jQh1H&api_key=x_fff6018b-ec0c-41a6-84a7-2d6666c2e224
 {
   "time": 1773914904.7491746,
@@ -19,7 +20,7 @@ GET https://authapi0.nominis.io:8443/v2/address/quick_check?address=2x6cYrR3Dxo1
   ]
 }
 
-# POLYGON, ETHEREUM
+* POLYGON, ETHEREUM
 {
   "time": 1773915116.019413,
   "status": "ok",
@@ -62,7 +63,7 @@ GET https://authapi0.nominis.io:8443/v2/address/quick_check?address=2x6cYrR3Dxo1
 }
 
 
-# Error Status 200
+* Error Status 200
 {
   "time": 1773915064.5822208,
   "status": "fail",
@@ -73,7 +74,7 @@ GET https://authapi0.nominis.io:8443/v2/address/quick_check?address=2x6cYrR3Dxo1
 }
 
 
-# Address Check
+* Address Check
 Req:
 {
     "chain": "sol",
@@ -94,7 +95,7 @@ Resp:
 }
 
 Get:
-# Error Api key 200
+* Error Api key 200
 {
   "time": 1773918419.3645952,
   "status": "fail",
@@ -104,9 +105,9 @@ Get:
   "data": ""
 }
 
-# Error No api key 422
+* Error No api key 422
 
-# OK{
+* OK{
   "time": 1773918485.4223354,
   "status": "ok",
   "error": "",
@@ -347,7 +348,7 @@ Get:
 }
 
 
-# transaction check init
+* transaction check init
 {
   "time": 1773927497.3674288,
   "status": "ok",
@@ -358,7 +359,7 @@ Get:
   "data": "16bf9a3c-8523-4862-85b9-52b31b8c5dff"
 }
 
-# transaction check get
+* transaction check get
 {
   "time": 1773927597.9181633,
   "status": "ok",
@@ -438,7 +439,7 @@ Get:
   }
 }
 
-# Address transactions
+* Address transactions
 {
   "time": 1773927964.089241,
   "status": "ok",
