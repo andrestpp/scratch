@@ -1,0 +1,609 @@
+# Address Quick Check
+# SOLANA
+GET https://authapi0.nominis.io:8443/v2/address/quick_check?address=2x6cYrR3Dxo1znJMVsew8kHEWuyHsGKHPiaNJZ3jQh1H&api_key=x_fff6018b-ec0c-41a6-84a7-2d6666c2e224
+{
+  "time": 1773914904.7491746,
+  "status": "ok",
+  "error": "",
+  "request_type": "quick_check",
+  "address": "2x6cYrR3Dxo1znJMVsew8kHEWuyHsGKHPiaNJZ3jQh1H",
+  "data": [
+    {
+      "address": "2x6cYrR3Dxo1znJMVsew8kHEWuyHsGKHPiaNJZ3jQh1H",
+      "name": "",
+      "classification": [],
+      "risk_factors": [],
+      "quick_score": "low"
+    }
+  ]
+}
+
+# POLYGON, ETHEREUM
+{
+  "time": 1773915116.019413,
+  "status": "ok",
+  "error": "",
+  "request_type": "quick_check",
+  "address": "0xec298ef1eea2adac5ef365085154d17b6eda2319",
+  "data": [
+    {
+      "address": "0xec298ef1eea2adac5ef365085154d17b6eda2319",
+      "name": "Coinex",
+      "classification": [
+        "user wallet",
+        "cex",
+        "low kyc exchange"
+      ],
+      "risk_factors": [],
+      "quick_score": "med"
+    }
+  ]
+}
+
+{
+  "time": 1773915787.093483,
+  "status": "ok",
+  "error": "",
+  "request_type": "quick_check",
+  "address": "0x2b8834cd90a28da3da5e3849a9972c837ca921bd",
+  "data": [
+    {
+      "address": "0x2b8834cd90a28da3da5e3849a9972c837ca921bd",
+      "name": "Bybit",
+      "classification": [
+        "user wallet",
+        "cex"
+      ],
+      "risk_factors": [],
+      "quick_score": "low"
+    }
+  ]
+}
+
+
+# Error Status 200
+{
+  "time": 1773915064.5822208,
+  "status": "fail",
+  "error": "Invalid API Key",
+  "request_type": "quick_check",
+  "address": "0xec298ef1eea2adac5ef365085154d17b6eda2319",
+  "data": ""
+}
+
+
+# Address Check
+Req:
+{
+    "chain": "sol",
+    "address": "AZy9GMgeesTFkJ8XgKxia1jcVR4gNitLVSeDHgRThGtp",
+    "depth": 5,
+    "api_key": "x_fff6018b-ec0c-41a6-84a7-2d6666c2e227"
+}
+
+Resp:
+{
+  "time": 1773917056.9204223,
+  "status": "ok",
+  "error": "",
+  "request_type": "check_exposure",
+  "chain": "sol",
+  "address": "AZy9GMgeesTFkJ8XgKxia1jcVR4gNitLVSeDHgRThGtp",
+  "data": "67f36432-a304-41c2-8610-31327c227987"
+}
+
+Get:
+# Error Api key 200
+{
+  "time": 1773918419.3645952,
+  "status": "fail",
+  "error": "Unknown Request ID",
+  "request_type": "check_exposure",
+  "req_id": "9bbfbc87-f2b6-47d9-ba36-193ef922404e",
+  "data": ""
+}
+
+# Error No api key 422
+
+# OK{
+  "time": 1773918485.4223354,
+  "status": "ok",
+  "error": "",
+  "request_type": "check_exposure",
+  "req_id": "9bbfbc87-f2b6-47d9-ba36-193ef922404e",
+  "data": {
+    "status": "done",
+    "data": {
+      "screen_type": "api_full",
+      "depth": 5,
+      "address_data": {
+        "chain": "sol",
+        "address": "AZy9GMgeesTFkJ8XgKxia1jcVR4gNitLVSeDHgRThGtp",
+        "name": "BingX",
+        "classification": [
+          "user wallet",
+          "cex"
+        ],
+        "risk_factors": [],
+        "first_funded_by": {
+          "address": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+          "tx_hash": "4T2V39U7wk77FAaQnFLp6MPJkhYhS81z9qAQGyhe58cqjiQMKU6jFxRridn797dBboeNGLf87DEsi58wuRttonR5",
+          "coin_name": "USDC",
+          "amount": 29.04714
+        },
+        "first_tx": 1772302403.0,
+        "last_tx": 1773881688.0,
+        "total_in": 500.31,
+        "total_out": 500.02
+      },
+      "balance": [
+        {
+          "coin": "Native",
+          "amount": 0.00189,
+          "usd_value": 0.27405
+        },
+        {
+          "coin": "USDC",
+          "amount": 0.0,
+          "usd_value": 0.0
+        }
+      ],
+      "exposure": [
+        {
+          "proximity": 1,
+          "sender": "AZy9GMgeesTFkJ8XgKxia1jcVR4gNitLVSeDHgRThGtp",
+          "sender_name": "BingX",
+          "sender_classification": [
+            "user wallet",
+            "cex"
+          ],
+          "sender_risk_factors": [],
+          "sender_quick_score": "low",
+          "receiver": "GsCY6n5RY7v3qcDAzGYcDShNzthngVs4So4b5nmVuqSN",
+          "receiver_name": "BingX",
+          "receiver_classification": [
+            "hot wallet",
+            "cex"
+          ],
+          "receiver_risk_factors": [
+            "gambling_out",
+            "low_kyc_exchange_out",
+            "unknown_cex_out"
+          ],
+          "receiver_quick_score": "low",
+          "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "coin_name": "USDC",
+          "first_tx": 1772302684.0,
+          "last_tx": 1773881688.0,
+          "total_tx": 2,
+          "amount": 500.02092,
+          "usd_value": 500.02
+        },
+        {
+          "proximity": -1,
+          "sender": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+          "sender_name": "GBTC Finance",
+          "sender_classification": [
+            "user wallet",
+            "cex"
+          ],
+          "sender_risk_factors": [],
+          "sender_quick_score": "low",
+          "receiver": "AZy9GMgeesTFkJ8XgKxia1jcVR4gNitLVSeDHgRThGtp",
+          "receiver_name": "BingX",
+          "receiver_classification": [
+            "user wallet",
+            "cex"
+          ],
+          "receiver_risk_factors": [],
+          "receiver_quick_score": "low",
+          "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "coin_name": "USDC",
+          "first_tx": 1772302403.0,
+          "last_tx": 1772310194.0,
+          "total_tx": 3,
+          "amount": 500.02092,
+          "usd_value": 500.02
+        },
+        {
+          "proximity": -1,
+          "sender": "HWTqhfUzNLmfCw4AeXagujMmGVmUhuTF1nzHPXEPUwRt",
+          "sender_name": "",
+          "sender_classification": [],
+          "sender_risk_factors": [],
+          "sender_quick_score": "low",
+          "receiver": "AZy9GMgeesTFkJ8XgKxia1jcVR4gNitLVSeDHgRThGtp",
+          "receiver_name": "BingX",
+          "receiver_classification": [
+            "user wallet",
+            "cex"
+          ],
+          "receiver_risk_factors": [],
+          "receiver_quick_score": "low",
+          "coin": "",
+          "coin_name": "Native",
+          "first_tx": 1772302591.0,
+          "last_tx": 1773881557.0,
+          "total_tx": 2,
+          "amount": 0.002,
+          "usd_value": 0.29
+        }
+      ],
+      "asset_distribution_in": [
+        {
+          "coin_name": "Native",
+          "amount": 0.002,
+          "usd_value": 0.29,
+          "share": 0.0005796406112282262
+        },
+        {
+          "coin_name": "USDC",
+          "amount": 500.02092,
+          "usd_value": 500.02,
+          "share": 0.9994203394011645
+        }
+      ],
+      "asset_distribution_out": [
+        {
+          "coin_name": "USDC",
+          "amount": 500.02092,
+          "usd_value": 500.02,
+          "share": 0.9999999800008004
+        }
+      ],
+      "source_of_funds": [
+        {
+          "proximity": "-1",
+          "address_name": "GBTC Finance",
+          "classification": [
+            "user wallet",
+            "cex"
+          ],
+          "risk_factors": [],
+          "quick_score": "low",
+          "usd_value": 500.02,
+          "exposure_share": 0.9994203593771861
+        },
+        {
+          "proximity": "-1",
+          "address_name": "Other",
+          "classification": [],
+          "risk_factors": [],
+          "quick_score": "low",
+          "usd_value": 0.29,
+          "exposure_share": 0.0005796406228138554
+        }
+      ],
+      "destination_of_funds": [
+        {
+          "proximity": "1",
+          "address_name": "BingX",
+          "classification": [
+            "hot wallet",
+            "cex"
+          ],
+          "risk_factors": [
+            "gambling_out",
+            "low_kyc_exchange_out",
+            "unknown_cex_out"
+          ],
+          "quick_score": "low",
+          "usd_value": 500.02,
+          "exposure_share": 1.0
+        }
+      ],
+      "intel": [],
+      "activity": [
+        {
+          "weekday": "Thursday",
+          "hour": 0,
+          "activity_count": 1
+        },
+        {
+          "weekday": "Saturday",
+          "hour": 18,
+          "activity_count": 2
+        },
+        {
+          "weekday": "Saturday",
+          "hour": 20,
+          "activity_count": 4
+        }
+      ],
+      "geoint": [
+        {
+          "country": "IN",
+          "share": 0.52
+        }
+      ],
+      "risk_categories": [
+        {
+          "classification": "hot wallet",
+          "proximity": [
+            1
+          ]
+        },
+        {
+          "classification": "cex",
+          "proximity": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "classification": "user wallet",
+          "proximity": [
+            0,
+            -1
+          ]
+        }
+      ],
+      "risk_score": "low",
+      "check_time": 1773918249.1713111
+    }
+  }
+}
+
+
+# transaction check init
+{
+  "time": 1773927497.3674288,
+  "status": "ok",
+  "error": "",
+  "request_type": "check_transaction",
+  "chain": "eth",
+  "tx_hash": "0x5d7648d1392923a2882bbc660ec16c43ad37bec3533bccb0c164d6f622f4542e",
+  "data": "16bf9a3c-8523-4862-85b9-52b31b8c5dff"
+}
+
+# transaction check get
+{
+  "time": 1773927597.9181633,
+  "status": "ok",
+  "error": "",
+  "request_type": "check_transaction",
+  "req_id": "16bf9a3c-8523-4862-85b9-52b31b8c5dff",
+  "data": {
+    "status": "done",
+    "data": {
+      "depth": 0,
+      "created_at": 1742852195.0,
+      "chain": "eth",
+      "tx_hash": "0x5d7648d1392923a2882bbc660ec16c43ad37bec3533bccb0c164d6f622f4542e",
+      "exposure": [
+        {
+          "proximity": 0,
+          "chain": "eth",
+          "sender": "0x90a64ee5633a21cd64eed9547018aad28315f5a8",
+          "sender_name": "Nobitex",
+          "sender_classification": [
+            "cex",
+            "high risk jurisdiction",
+            "user wallet"
+          ],
+          "sender_risk_factors": [],
+          "sender_quick_score": "high",
+          "receiver": "0xea91be909d902a02c67ccfd10ac85dd1d968fab4",
+          "receiver_name": "Nobitex",
+          "receiver_classification": [
+            "cex",
+            "high risk jurisdiction",
+            "hot wallet",
+            "user wallet",
+            "blocked"
+          ],
+          "receiver_risk_factors": [
+            "blocked"
+          ],
+          "receiver_quick_score": "critical",
+          "coin": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "coin_name": "Native",
+          "amount": 0.036964084537459,
+          "usd_value": 74.18691766668022
+        }
+      ],
+      "coin": [
+        {
+          "coin": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "coin_name": "Native",
+          "amount": 0.036964084537459
+        }
+      ],
+      "usd_value": 74.18691766668022,
+      "behavioral_indicators": [],
+      "risk_categories": [
+        {
+          "classification": "cex",
+          "proximity": [
+            0
+          ]
+        },
+        {
+          "classification": "high risk jurisdiction",
+          "proximity": [
+            0
+          ]
+        },
+        {
+          "classification": "user wallet",
+          "proximity": [
+            0
+          ]
+        }
+      ],
+      "risk_score": "high"
+    }
+  }
+}
+
+# Address transactions
+{
+  "time": 1773927964.089241,
+  "status": "ok",
+  "error": "",
+  "request_type": "get_transactions_v2",
+  "data": [
+    {
+      "unique_id": "97562ef5f3",
+      "chain": "sol",
+      "created_at": 1773881688.0,
+      "tx_hash": "5bUdWXQ9FSyMek32WfhLYVxGoAr9iiTZL3vt98iU5xtUTqAXJGsFhgrxeNN66bJiydyG59neGMy9biifUjKthViT",
+      "address": "GsCY6n5RY7v3qcDAzGYcDShNzthngVs4So4b5nmVuqSN",
+      "direction": "out",
+      "counterparty": "GsCY6n5RY7v3qcDAzGYcDShNzthngVs4So4b5nmVuqSN",
+      "name": "BingX",
+      "classification": [
+        "cex",
+        "hot wallet"
+      ],
+      "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "coin_name": "USDC",
+      "amount": 470.97378,
+      "usd_value": 470.97
+    },
+    {
+      "unique_id": "2a72dada3d",
+      "chain": "sol",
+      "created_at": 1773881557.0,
+      "tx_hash": "2Qhg3pNRzJMD3pyWtQujqEMTiJacGZeEXGEhFYA8CuCBJosR4hmUB8oU87WeyrfDuEZk5BfTKHKEG19sNUY2aEsD",
+      "address": "HWTqhfUzNLmfCw4AeXagujMmGVmUhuTF1nzHPXEPUwRt",
+      "direction": "in",
+      "counterparty": "HWTqhfUzNLmfCw4AeXagujMmGVmUhuTF1nzHPXEPUwRt",
+      "name": "",
+      "classification": [],
+      "coin": "",
+      "coin_name": "Native",
+      "amount": 0.001,
+      "usd_value": 0.14
+    },
+    {
+      "unique_id": "78504ac596",
+      "chain": "sol",
+      "created_at": 1772310211.0,
+      "tx_hash": "2V5eBWfq1ya1ryTYKG8iPRH9WwM4Qm2xqThttufk9bwtnkWy5iiEbQ7qsb9tvoMd6T3rwypFVUBydHkrAk4MnzCe",
+      "address": "4p2KBhedRK4QyDkkZjN8R5BXVan4D6M4vUCHhFRsF2j1",
+      "direction": "in",
+      "counterparty": "4p2KBhedRK4QyDkkZjN8R5BXVan4D6M4vUCHhFRsF2j1",
+      "name": "GBTC Finance",
+      "classification": [
+        "cex",
+        "user wallet"
+      ],
+      "coin": "",
+      "coin_name": "Native",
+      "amount": 1e-05,
+      "usd_value": 0.0
+    },
+    {
+      "unique_id": "6b90df5e8a",
+      "chain": "sol",
+      "created_at": 1772310194.0,
+      "tx_hash": "PCFSduqDBKEozxwfnNbshuNbRu5RmjChtW3isGqYFgx4zLJ6UJoMRwd5ZupQopEBGgdbxve9EdUSucUheaeQoHj",
+      "address": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+      "direction": "in",
+      "counterparty": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+      "name": "GBTC Finance",
+      "classification": [
+        "cex",
+        "user wallet"
+      ],
+      "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "coin_name": "USDC",
+      "amount": 273.62664,
+      "usd_value": 273.63
+    },
+    {
+      "unique_id": "343f93ee29",
+      "chain": "sol",
+      "created_at": 1772309250.0,
+      "tx_hash": "3PtjLvDJRvgX9QM1THEtmE127aCJkGgKDf7FVFwvBwSASRA9fPs4wwGu9QMosAj4ZzTm2v1iQCebpp7CUZ6ttzrf",
+      "address": "4p2KBhedRK4QyDkkZjN8R5BXVan4D6M4vUCHhFRsF2j1",
+      "direction": "in",
+      "counterparty": "4p2KBhedRK4QyDkkZjN8R5BXVan4D6M4vUCHhFRsF2j1",
+      "name": "GBTC Finance",
+      "classification": [
+        "cex",
+        "user wallet"
+      ],
+      "coin": "",
+      "coin_name": "Native",
+      "amount": 1e-05,
+      "usd_value": 0.0
+    },
+    {
+      "unique_id": "afff457b58",
+      "chain": "sol",
+      "created_at": 1772309234.0,
+      "tx_hash": "5AfTEwRhxqJcVDy6Fz5qM7TE9xvBH6B2z48idMHJk3xiL3DSsQ13EEfXGCoorjncSHaCvoEAV5grqrWAXnzemfae",
+      "address": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+      "direction": "in",
+      "counterparty": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+      "name": "GBTC Finance",
+      "classification": [
+        "cex",
+        "user wallet"
+      ],
+      "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "coin_name": "USDC",
+      "amount": 197.34714,
+      "usd_value": 197.35
+    },
+    {
+      "unique_id": "32ac45fac4",
+      "chain": "sol",
+      "created_at": 1772302684.0,
+      "tx_hash": "3JiPHsfuFVMHjwow2fRczud1cWE7rTWrZDq9Tuz3cFUnW1bkGUrpKY7TgeycWBjStyyToHSJ9HJwT1qupAriaxAd",
+      "address": "GsCY6n5RY7v3qcDAzGYcDShNzthngVs4So4b5nmVuqSN",
+      "direction": "out",
+      "counterparty": "GsCY6n5RY7v3qcDAzGYcDShNzthngVs4So4b5nmVuqSN",
+      "name": "BingX",
+      "classification": [
+        "cex",
+        "hot wallet"
+      ],
+      "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "coin_name": "USDC",
+      "amount": 29.04714,
+      "usd_value": 29.05
+    },
+    {
+      "unique_id": "215bc932bb",
+      "chain": "sol",
+      "created_at": 1772302591.0,
+      "tx_hash": "2qFVpCRSSzPCe9sYhft4FTwboH6X5T22PhSBdY69fyFLMcQp3yCMPJNrxRH2BstbuXF9c6Yvh6eDm6YDt9nV8iu5",
+      "address": "HWTqhfUzNLmfCw4AeXagujMmGVmUhuTF1nzHPXEPUwRt",
+      "direction": "in",
+      "counterparty": "HWTqhfUzNLmfCw4AeXagujMmGVmUhuTF1nzHPXEPUwRt",
+      "name": "",
+      "classification": [],
+      "coin": "",
+      "coin_name": "Native",
+      "amount": 0.001,
+      "usd_value": 0.14
+    },
+    {
+      "unique_id": "bc41d34666",
+      "chain": "sol",
+      "created_at": 1772302403.0,
+      "tx_hash": "4T2V39U7wk77FAaQnFLp6MPJkhYhS81z9qAQGyhe58cqjiQMKU6jFxRridn797dBboeNGLf87DEsi58wuRttonR5",
+      "address": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+      "direction": "in",
+      "counterparty": "4p2KMfxSprn2AshiJF91vXP3QaStroP6RDNWVSxsF2j1",
+      "name": "GBTC Finance",
+      "classification": [
+        "cex",
+        "user wallet"
+      ],
+      "coin": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "coin_name": "USDC",
+      "amount": 29.04714,
+      "usd_value": 29.05
+    }
+  ]
+}
+
+
+Implementacion Nominis
+
+Manual Payin no se listan en el listado de ordenes Falta en (Order Index). Pending out balance
