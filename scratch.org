@@ -605,5 +605,4 @@ Get:
 
 
 Implementacion Nominis
-
 Manual Payin no se listan en el listado de ordenes Falta en (Order Index). Pending out balance
