@@ -1,6 +1,4 @@
 * DONE
-+ Fix bug in manual payin (order index -> no salia en listado de ordenes, adicionaba un pending out)
-+ Manual Payin no se listan en el listado de ordenes Falta en (Order Index). Pending out balance
 
 * TODO
 
