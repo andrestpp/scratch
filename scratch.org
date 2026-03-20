@@ -4,6 +4,7 @@
 
 * TODO
 
+- Subir a prod el bug de manual payin
 - Implementacion Nominis en flujo de crypto payout (Servicio de validacion de antifraude)
 
 * WIP
