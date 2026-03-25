@@ -1,8 +1,8 @@
 * DONE
 
-- Implementacion Nominis en flujo de crypto payout (Servicio de validacion de antifraude)
-
 * TODO
+
+- Nominis crypto payin
 
 * WIP
 ** Address Quick Check
