@@ -12,6 +12,7 @@
 }
 ```
 
+- Limpiar DTO
 - Para que el *data.metadata.stage* "processing"?
 
 * PAYIN_ACCOUNT_READY
