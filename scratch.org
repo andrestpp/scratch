@@ -12,7 +12,7 @@
 }
 ```
 
-- Para que el *stage* "processing"?
+- Para que el *data.metadata.stage* "processing"?
 
 * PAYIN_ACCOUNT_READY
 
