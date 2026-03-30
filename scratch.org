@@ -79,6 +79,7 @@
 - accountMTReference -> Referencia del payin method en ralio??
 - orderMTReference -> Order ID en payments??
 - Falta peticion de endpoint para crear el metodo de payin
+- Hace falta cambiar el endpoint en ralio que recibe los eventos de payout?
 
 
 * DONE
