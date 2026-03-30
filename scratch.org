@@ -1,3 +1,52 @@
+* PAYIN_ACCOUNT_PROCESSING
+```
+{
+"signature": "<hex>",
+"data": {
+    "event": "PAYIN_ACCOUNT_PROCESSING",
+    "ownerId": "00000000-0000-4000-8000-000000000001",
+    "reference": "my-account-ref-001",
+    "type": "BANK",
+    "metadata": { "provider": "MOCKY", "stage": "processing" }
+    }
+}
+```
+
+- Para que el stage "processing"?
+
+* PAYIN_ACCOUNT_READY
+
+```
+{
+	"signature": "<hex>",
+	"data": {
+		"event": "PAYIN_ACCOUNT_READY",
+		"ownerId": "00000000-0000-4000-8000-000000000001",
+		"reference": "my-account-ref-001",
+		"type": "BANK",
+		"status": "READY",
+		"metadata": { "provider": "MOCKY", "stage": "ready" },
+		"account": {
+			"id": "acc-001",
+			"ownerId": "00000000-0000-4000-8000-000000000001",
+			"reference": "my-account-ref-001",
+			"status": "READY",
+			"type": "BANK",
+			"routingType": "IBAN",
+			"currency": "EUR",
+			"iban": "DE89370400440532013000",
+			"swift": "COBADEFFXXX",
+			"conceptPrefix": "MOCKY",
+			"createdAt": "2026-01-15T10:00:00.000Z",
+			"updatedAt": "2026-01-15T10:05:00.000Z"
+		}
+	}
+}
+```
+
+- Para que el stage en el metadata?
+- Para que el status = READY?
+
 * DONE
 
 * TODO
