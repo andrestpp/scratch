@@ -12,7 +12,7 @@
 }
 ```
 
-- Para que el stage "processing"?
+- Para que el *stage* "processing"?
 
 * PAYIN_ACCOUNT_READY
 
@@ -44,8 +44,8 @@
 }
 ```
 
-- Para que el stage en el metadata?
-- Para que el status = READY?
+- Para que el *stage* en el metadata?
+- Para que el *status* = READY?
 
 * DONE
 
