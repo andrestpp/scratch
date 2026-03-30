@@ -48,7 +48,7 @@
 - Para que el *data.metadata.stage* en el metadata?
 - Para que el *data.status* = READY?
 
-* PAYIN_ORDER_PENDING
+* PAYIN_ORDER_PENDING,PAYIN_ORDER_SETTLED
 
 ```
 {
@@ -75,7 +75,7 @@
 }
 ```
 
-- Recordar enviar el txHash para el caso de crypto payin
+- Recordar enviar el txHash para el caso de crypto payin. OK
 
 
 * DONE
