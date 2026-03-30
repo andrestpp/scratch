@@ -75,6 +75,8 @@
 }
 ```
 
+- Recordar enviar el txHash para el caso de crypto
+
 
 * DONE
 
