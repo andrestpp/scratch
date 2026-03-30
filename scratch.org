@@ -70,12 +70,11 @@
 	"destinationCurrency": "EUR",
 	"concept": "MOCKY payment from Alice",
 	"senderName": "Alice Smith",
-	"senderAccount": "DE89370400440532013000"
+	"senderAccount": "DE89370400440532013000",
+	"txHash: "" // Only for PAYIN_ORDER_SETTLED for crypto payin
     }
 }
 ```
-
-- Recordar enviar el txHash para el caso de crypto payin. OK
 
 
 * DONE
