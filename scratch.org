@@ -1,3 +1,4 @@
+- Nominis
 - Falta peticion de endpoint para crear el metodo de payin
 - Hace falta cambiar el endpoint en ralio que recibe los eventos de payout?
 - Ha cambiado el payload de los payouts? No veo el "data.rate"
