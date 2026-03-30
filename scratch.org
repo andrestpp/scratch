@@ -1,7 +1,3 @@
-- Nominis
-- Falta peticion de endpoint para crear el metodo de payin
-- Hace falta cambiar el endpoint en ralio que recibe los eventos de payout?
-- Ha cambiado el payload de los payouts? No veo el "data.rate"
 
 * PAYIN_ACCOUNT_PROCESSING
 ```
@@ -16,9 +12,6 @@
     }
 }
 ```
-
-- Limpiar DTO
-- Para que el *data.metadata.stage* "processing"?
 
 * PAYIN_ACCOUNT_READY
 
@@ -49,9 +42,6 @@
 	}
 }
 ```
-
-- Para que el *data.metadata.stage* en el metadata?
-- Para que el *data.status* = READY?
 
 * PAYIN_ORDER_PENDING,PAYIN_ORDER_SETTLED
 
