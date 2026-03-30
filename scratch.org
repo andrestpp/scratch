@@ -44,8 +44,8 @@
 }
 ```
 
-- Para que el *stage* en el metadata?
-- Para que el *status* = READY?
+- Para que el *data.metadata.stage* en el metadata?
+- Para que el *data.status* = READY?
 
 * DONE
 
