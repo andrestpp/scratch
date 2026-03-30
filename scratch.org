@@ -48,6 +48,34 @@
 - Para que el *data.metadata.stage* en el metadata?
 - Para que el *data.status* = READY?
 
+* PAYIN_ORDER_PENDING
+
+```
+{
+    "signature": "<hex>",
+    "data": {
+	"event": "PAYIN_ORDER_PENDING",
+	"ownerId": "00000000-0000-4000-8000-000000000001",
+	"accountMTReference": "my-account-ref-001",
+	"moneyTransfer": "MOCKY",
+	"type": "BANK",
+	"orderMTReference": "order-abc-001",
+	"originAmount": 15000,
+	"originCurrency": "USD",
+	"originToMtrRate": 0.92,
+	"mtrAmount": 13800,
+	"mtrCurrency": "EUR",
+	"mtrToDestinationRate": 1.0,
+	"destinationAmount": 13800,
+	"destinationCurrency": "EUR",
+	"concept": "MOCKY payment from Alice",
+	"senderName": "Alice Smith",
+	"senderAccount": "DE89370400440532013000"
+    }
+}
+```
+
+
 * DONE
 
 * TODO
