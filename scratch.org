@@ -76,6 +76,9 @@
 }
 ```
 
+- accountMTReference -> Referencia del payin method en ralio??
+- orderMTReference -> Order ID en payments??
+
 
 * DONE
 
