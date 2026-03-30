@@ -1,3 +1,14 @@
+* Provider account
+
+Merchant settings:
+Account:
+- Personal:
+ * EUR -> EMBANC
+ * USD -> Nilos
+- Business: 
+ * USD -> Depasify (50%)
+ * USD -> Nilos (50%)
+
 
 * PAYIN_ACCOUNT_PROCESSING
 ```
