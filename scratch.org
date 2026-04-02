@@ -1,13 +1,5 @@
 * Provider account
 
-{
-  "log-driver": "json-file",
-  "log-opts": {
-    "max-size": "100m",
-    "max-file": "3"
-  }
-}
-
 Merchant settings:
 Account:
 - Personal:
