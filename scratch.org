@@ -1,5 +1,6 @@
 * TODO
 ** Falta adicionar el sent_at a las transferencias internas
+** Falta el provider cost para payouts por epgw
 
 * Provider account
 
