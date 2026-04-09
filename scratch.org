@@ -3,6 +3,8 @@
 ** Falta adicionar el sent_at al payout por epgw con fees
 ** Falta el provider cost para payouts por epgw
 
+** Validar los montos en los payouts de epgw (rate, etc..)
+
 * Payout con ep no funciona el toGet
 
 * Pruebas
