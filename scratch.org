@@ -7,8 +7,10 @@
 
 |          | crypto payin | bank payin | crypto payout | bank payout |
 |----------+--------------+------------+---------------+-------------|
-| sin fees |  *           |          * |  *            |           * |
-| con fees |              |            |               |             |
+| sin fees | *            | *          | *             | *           |
+| con fees | *            | *          | *             | *           |
+
+
 
 * Provider account
 
