@@ -3,6 +3,13 @@
 ** Falta adicionar el sent_at al payout por epgw con fees
 ** Falta el provider cost para payouts por epgw
 
+* Pruebas
+
+|          | crypto payin | bank payin | crypto payout | bank payout |
+|----------+--------------+------------+---------------+-------------|
+| sin fees |  *           |          * |  *            |           * |
+| con fees |              |            |               |             |
+
 * Provider account
 
 Merchant settings:
